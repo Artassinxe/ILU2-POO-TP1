@@ -74,7 +74,14 @@ public class Etal {
 		return null;
 	}
 
+	/**
+	 * @param produit
+	 * @return
+	 */
 	public boolean contientProduit(String produit) {
+		if (this.produit == null) {
+			return false;
+		}
 		return this.produit.equals(produit);
 	}
 
